@@ -40,7 +40,18 @@ nav ul li a {
     font-size: 20px;
     padding: 10px;
     font-weight: bold;
+}
 
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
 }
 
 header {
@@ -119,6 +130,17 @@ main {
     height: 315px;
 }
 
+@media (max-width: 768px) {
+    .videotour {
+        flex-direction: column;
+    }
+
+    .videotour iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
 .textovideo {
     flex: 1;
     font-size: 20px;
@@ -174,6 +196,14 @@ main {
     width: 100%;
     height: auto;
     max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .flex-container div,
+  .fotos div {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
 }
 
 .acerca a {
