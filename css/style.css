@@ -43,11 +43,11 @@ nav ul li a {
 }
 
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-  }
+    nav ul {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
 
   nav ul li {
     padding: 10px 0;
@@ -93,8 +93,10 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    gap: 10px;
 }
 
 main {
